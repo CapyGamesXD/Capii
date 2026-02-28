@@ -10,6 +10,7 @@
 			navigator.serviceWorker.register('/sw.js').then((reg) => {
 				reg.addEventListener('updatefound', () => {
 					const newSW = reg.installing;
+					setInterval(() => reg.update(), 60 * 1000);
 					//@ts-ignore
 					newSW.addEventListener('statechange', () => {
 						//@ts-ignore
