@@ -13,6 +13,5 @@
 />
 
 <div class="centerdiv">
-	<h1>{hours}:{minutes}</h1>
-	<h2>Disclaimer: This is still a work-in-progress site. :D</h2>
+	<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
 </div>
