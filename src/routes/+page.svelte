@@ -1,8 +1,14 @@
 <script>
+	import { version } from '$lib/versions';
+
 	let date = new Date();
 
 	$: hours = date.getHours();
 	$: minutes = date.getMinutes();
+
+	setInterval(() => {
+		date = new Date();
+	}, 1000);
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,4 +20,5 @@
 
 <div class="centerdiv">
 	<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
+	<p class="bottomtext">Version: {version} <a href="logs">See update logs</a></p>
 </div>

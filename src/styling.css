@@ -3,6 +3,8 @@ body {
 	font-optical-sizing: auto;
 	text-align: center;
 	overflow: hidden;
+	background-color: rgb(44, 44, 44);
+	color: white;
 }
 
 .centerdiv {
@@ -18,5 +20,23 @@ h1 {
 }
 
 h2 {
-	font-size: 3vw;
+	font-size: 5vw;
+}
+
+.bottomtext {
+	position: fixed;
+	bottom: 2vh;
+}
+
+.back {
+	flex-direction: column;
+	display: flex;
+	color: white;
+	background-color: rgb(124, 169, 159);
+	width: 10vw;
+	height: 5vw;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	text-decoration: none;
 }
