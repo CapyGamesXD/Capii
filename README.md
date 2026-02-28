@@ -1,6 +1,6 @@
 # Capii
 
-This here is a simple piece of firmware for a Pi or similar device!
+This here is a little program for a Pi or similar device!
 
 It uses Cog to display the program, which auto-updates with service workers! :D
 
@@ -22,4 +22,4 @@ sudo systemctl start capii
 
 If there are any issues don't hesistate to log them!
 
-<sub> Disclaimer! Since I'm new to this style of project, I utilised various sources, among which was Claude AI. I assure you, I made the vast majority of this project and used it primarily as a learning tool. :) I say this for the sake of full transparency hehe XD </sub>
+<sub> Disclaimer! Updating might have some issues, since I made the system for the first time. I'll continue testing! Please log an issue if you find one! :D</sub>

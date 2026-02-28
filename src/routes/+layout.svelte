@@ -1,6 +1,6 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
-	import { register } from 'module';
+
 	import '../styling.css';
 	let { children } = $props();
 	import { onMount } from 'svelte';
