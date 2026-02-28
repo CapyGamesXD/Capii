@@ -23,5 +23,6 @@ EOF
 
 sudo systemctl daemon-reload
 sudo systemctl enable capiirun
-echo "The system will now reboot and start your program on startup!"
-sudo reboot
+echo "The program will now be run! :D!"
+sleep 1
+sudo systemctl start capiirun
