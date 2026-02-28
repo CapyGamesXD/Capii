@@ -1,26 +1,16 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
+	import { register } from 'module';
 	import '../styling.css';
 	let { children } = $props();
 	import { onMount } from 'svelte';
 
-	// in +layout.svelte
 	onMount(() => {
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/sw.js').then((reg) => {
-				reg.addEventListener('updatefound', () => {
-					const newSW = reg.installing;
-					setInterval(() => reg.update(), 60 * 1000);
-					//@ts-ignore
-					newSW.addEventListener('statechange', () => {
-						//@ts-ignore
-						if (newSW.state === 'activated') {
-							window.location.reload();
-						}
-					});
-				});
-			});
-		}
+		navigator.serviceWorker.register('/sw.js').then((res) =>
+			res.addEventListener('updatefound', () => {
+				window.location.reload();
+			})
+		);
 	});
 </script>
 
