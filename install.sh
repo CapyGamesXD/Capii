@@ -19,6 +19,7 @@ ExecStart=cog https://capii.capydesigns.com
 WantedBy=multi-user.target
 EOF
 
-
+sudo systemctl daemon-reload
 sudo systemctl enable capiirun
 echo "The system will now reboot and start your program on startup!"
+sudo reboot
