@@ -3,7 +3,8 @@
 
 	let apps = [
 		{ name: 'Time App', href: '/' },
-		{ name: 'Capy App!', href: 'capy' }
+		{ name: 'Capy App!', href: 'capy' },
+		{ name: 'Stopwatch', href: 'stopwatch' }
 	];
 </script>
 
