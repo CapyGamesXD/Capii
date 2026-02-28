@@ -2,7 +2,7 @@ body {
 	font-family: 'SN Pro', sans-serif;
 	font-optical-sizing: auto;
 	text-align: center;
-	overflow: hidden;
+	overflow: auto;
 	background-color: rgb(44, 44, 44);
 	color: white;
 }
@@ -11,7 +11,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 95vh;
+	width: 100vw;
+
 	flex-direction: column;
 }
 
@@ -33,10 +35,63 @@ h2 {
 	display: flex;
 	color: white;
 	background-color: rgb(124, 169, 159);
-	width: 10vw;
-	height: 5vw;
+	width: 14vw;
+	height: 7vw;
 	align-items: center;
 	justify-content: center;
 	border-radius: 30px;
 	text-decoration: none;
+	font-size: 2vw;
+}
+
+.nodecor {
+	text-decoration: none;
+	color: white;
+}
+
+a {
+	color: rgb(239, 151, 103);
+}
+
+.selectA {
+	font-size: 3vw;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+
+img {
+	max-height: 60vh;
+	border-radius: 10vh;
+	margin-top: 5vh;
+}
+
+button {
+	font-family: 'SN Pro', sans-serif;
+	font-optical-sizing: auto;
+	margin-top: 10vh;
+	flex-direction: column;
+	display: flex;
+	color: white;
+	background-color: rgb(124, 169, 159);
+	width: 14vw;
+	height: 8vw;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5vw;
+	text-decoration: none;
+	font-size: 2vw;
+	outline: none;
+	border: none;
+}
+.divider {
+	width: 30vw;
+	height: 1vh;
+	background-color: rgb(30, 30, 30);
+	border-radius: 30px;
+	margin: 5vh;
+}
+p {
+	width: 70vw;
+	font-size: 3vw;
 }

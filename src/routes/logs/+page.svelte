@@ -10,7 +10,7 @@
 />
 
 <div class="centerdiv">
-	<a class="back" href="/">Back</a>
+	<a class="back" href="selector">Back</a>
 	<h2>Version {version}</h2>
 	<p>{logs}</p>
 </div>

@@ -1,3 +1,4 @@
 // @ts-ignore
-export let version = '1.0.1';
-export let logs = "This is the original update. I've added this page and fixed the time tracking.";
+export let version = '1.1.0';
+export let logs =
+	'New update! Added a capybara page, alongside the selection page! Hope you enjoy! :D';

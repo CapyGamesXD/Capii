@@ -1,6 +1,4 @@
 <script>
-	import { version } from '$lib/versions';
-
 	let date = new Date();
 
 	$: hours = date.getHours();
@@ -18,7 +16,8 @@
 	rel="stylesheet"
 />
 
-<div class="centerdiv">
-	<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
-	<p class="bottomtext">Version: {version} <a href="logs">See update logs</a></p>
-</div>
+<a href="selector" class="nodecor">
+	<div class="centerdiv">
+		<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
+	</div>
+</a>
