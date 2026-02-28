@@ -11,7 +11,8 @@ sudo tee /etc/systemd/system/capiirun.service <<EOF
 
 [Unit]
 Description=The program to run Capii on startup
-After=network-online.service
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 ExecStart=cog https://capii.capydesigns.com
