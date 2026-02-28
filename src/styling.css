@@ -1,0 +1,22 @@
+body {
+	font-family: 'SN Pro', sans-serif;
+	font-optical-sizing: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.centerdiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 10vw;
+}
+
+h2 {
+	font-size: 3vw;
+}
