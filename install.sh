@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Welcome to the Capii Installer! :D"
 sleep 1
-echo "Sit back and grab a snack while waiting for the install. :)"
-sleep 1
+echo "This will take ~5m, so just sit back and grab a snack while waiting for the install. 😄"
+sleep 2
 
 sudo apt update
 sudo apt install cog libgles2
@@ -16,6 +16,7 @@ Wants=network-online.target
 
 [Service]
 User=$USER
+Environment=XDG_RUNTIME_DIR=/run/user/$(id -u)
 ExecStart=cog https://capii.capydesigns.com
 
 [Install]
