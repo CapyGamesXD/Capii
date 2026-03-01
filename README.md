@@ -20,6 +20,10 @@ rm -rf ~/.cache/wpe
 sudo systemctl start capii
 ```
 
+This removes the cache.
+
+## Notes:
+
 If there are any issues don't hesistate to log them!
 
 <sub> Disclaimer! Updating might have some issues, since I made the system for the first time. I'll continue testing! Please log an issue if you find one! :D</sub>
