@@ -4,7 +4,8 @@
 	let apps = [
 		{ name: 'Time App', href: '/' },
 		{ name: 'Capy App!', href: 'capy' },
-		{ name: 'Stopwatch', href: 'stopwatch' }
+		{ name: 'Stopwatch', href: 'stopwatch' },
+		{ name: 'Square (display testing)', href: 'square' }
 	];
 </script>
 

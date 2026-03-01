@@ -104,3 +104,14 @@ p {
 	width: 70vw;
 	font-size: 3vw;
 }
+
+.square {
+	width: 50vw;
+	height: 50vw;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3vw;
+	flex-direction: column;
+}
