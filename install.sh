@@ -15,6 +15,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+User=$USER
 ExecStart=cog https://capii.capydesigns.com
 
 [Install]
