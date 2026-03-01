@@ -17,10 +17,14 @@
 />
 
 <div class="centerdiv">
-	{#each apps as app}
-		<a href={app.href} class="selectA">{app.name}</a>
-		<div class="divider"></div>
-	{/each}
+	<p class="apptitle">Programs</p>
+
+	<div class="list">
+		{#each apps as app}
+			<a href={app.href} class="selectA">{app.name}</a>
+			<div class="divider"></div>
+		{/each}
+	</div>
 
 	<p>Version: {version}. <a href="logs">See update logs</a></p>
 </div>

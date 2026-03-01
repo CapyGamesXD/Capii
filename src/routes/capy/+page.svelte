@@ -22,7 +22,7 @@
 	rel="stylesheet"
 />
 
-<div class="centerdiv">
+<div class="fullcenterdiv">
 	<a class="back" href="selector">Back</a>
 	<img src={capy} />
 	<button on:click={fetchCapy}>Refresh</button>

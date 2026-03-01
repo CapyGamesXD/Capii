@@ -17,7 +17,7 @@
 />
 
 <a href="selector" class="nodecor">
-	<div class="centerdiv">
+	<div class="fullcenterdiv">
 		<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
 	</div>
 </a>

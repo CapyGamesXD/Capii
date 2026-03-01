@@ -2,7 +2,7 @@ body {
 	font-family: 'SN Pro', sans-serif;
 	font-optical-sizing: auto;
 	text-align: center;
-	overflow: auto;
+
 	background-color: rgb(44, 44, 44);
 	color: white;
 }
@@ -11,8 +11,15 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 95vh;
 
+	flex-direction: column;
+}
+
+.fullcenterdiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
 	flex-direction: column;
 }
 
@@ -30,7 +37,8 @@ h1 {
 }
 
 h2 {
-	font-size: 5vw;
+	font-size: 7vw;
+	margin-top: 10vh;
 }
 
 .bottomtext {
@@ -38,19 +46,30 @@ h2 {
 	bottom: 2vh;
 }
 
+.apptitle {
+	font-size: 5vw;
+	font-weight: 500;
+	margin-bottom: 0;
+}
 .back {
+	font-family: 'SN Pro', sans-serif;
+	font-optical-sizing: auto;
+
 	flex-direction: column;
 	display: flex;
 	color: white;
 	background-color: rgb(124, 169, 159);
-	width: 14vw;
-	height: 7vw;
+	width: 20vw;
+	height: 6vw;
 	align-items: center;
 	justify-content: center;
 	border-radius: 5vw;
 	text-decoration: none;
-	font-size: 2vw;
-	margin-top: 2vh;
+	font-size: 3vw;
+	outline: none;
+	margin-top: 3vh;
+	border: none;
+	margin-bottom: 4vh;
 }
 
 .nodecor {
@@ -83,18 +102,19 @@ button {
 	display: flex;
 	color: white;
 	background-color: rgb(124, 169, 159);
-	width: 14vw;
-	height: 8vw;
+	width: 20vw;
+	height: 6vw;
 	align-items: center;
 	justify-content: center;
 	border-radius: 5vw;
 	text-decoration: none;
-	font-size: 2vw;
+	font-size: 3vw;
 	outline: none;
 	border: none;
+	margin-bottom: 4vh;
 }
 .divider {
-	width: 30vw;
+	width: 15vw;
 	height: 1vh;
 	background-color: rgb(30, 30, 30);
 	border-radius: 30px;
@@ -106,14 +126,15 @@ p {
 }
 
 .square {
-	width: 40vw;
-	height: 40vw;
+	width: 20vw;
+	height: 20vw;
 	background-color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 3vw;
 	flex-direction: column;
+	min-height: 20vw;
 }
 
 .smallSquare {
@@ -124,5 +145,13 @@ p {
 	justify-content: center;
 	align-items: center;
 	padding: 3vw;
+	flex-direction: column;
+}
+
+.list {
+	margin-top: 10vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 	flex-direction: column;
 }

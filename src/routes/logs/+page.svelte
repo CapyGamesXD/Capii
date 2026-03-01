@@ -1,5 +1,9 @@
 <script>
 	import { version, logs } from '$lib/versions';
+
+	function autoUpdate() {
+		location.reload();
+	}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,4 +17,5 @@
 	<a class="back" href="selector">Back</a>
 	<h2>Version {version}</h2>
 	<p>{logs}</p>
+	<button on:click={autoUpdate}>Auto-update</button>
 </div>

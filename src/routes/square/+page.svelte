@@ -5,10 +5,13 @@
 	rel="stylesheet"
 />
 
-<div class="centerdiv">
+<div class="fullcenterdiv">
 	<a class="back" href="selector">Back</a>
 	<div class="square">
 		<div class="smallSquare"></div>
 	</div>
-	This square should be perfectly even on both axes. Measure to test for stretching on the screen.
+	<p>
+		These squares should be perfectly even on both axes. Measure to test for stretching on the
+		screen.
+	</p>
 </div>

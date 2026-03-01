@@ -49,7 +49,7 @@
 	rel="stylesheet"
 />
 
-<div class="centerdiv">
+<div class="fullcenterdiv">
 	<a class="back" href="selector">Back</a>
 	<h2>{result}</h2>
 	<div class="row">
