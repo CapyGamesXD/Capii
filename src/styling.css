@@ -169,6 +169,7 @@ input {
 	color: white;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
-
+	width: 35vw;
+	height: 7vh;
 	text-align: center;
 }
