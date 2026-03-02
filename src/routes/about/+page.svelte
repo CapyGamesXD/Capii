@@ -1,5 +1,5 @@
 <script>
-	import { version, logs } from '$lib/versions';
+	import { version } from '$lib/versions';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +11,9 @@
 
 <div class="centerdiv">
 	<a class="back" href="settings">Back</a>
-	<h2>Version {version}</h2>
-	<p>{logs}</p>
+	<p>
+		Capii Version {version} <br /> Created by CapyDesigns <br />All version info available at the
+		<a href="logs">Version page</a>. <br />More info available on
+		<a href="https://github.com/CapyGamesXD/Capii">Github</a>.
+	</p>
 </div>

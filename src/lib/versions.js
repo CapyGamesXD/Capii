@@ -1,4 +1,4 @@
 // @ts-ignore
-export let version = '1.2.0';
+export let version = '1.2.5, "Matrix"';
 export let logs =
-	'Made several improvements to UI and UX. Added a title to the programs page, improved layout of square page for easier testing.';
+	'Added developer features, visible in the developer panel within settings! Added some improvements to reloading on non-root pages. Various bug fixes and graphical improvements. This also marks the beginning of named Capii releases! ';

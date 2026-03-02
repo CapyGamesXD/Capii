@@ -1,12 +1,22 @@
 <script>
 	import { version } from '$lib/versions';
+	import { onMount } from 'svelte';
 
 	let apps = [
 		{ name: 'Time App', href: '/' },
 		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Stopwatch', href: 'stopwatch' },
+		{ name: 'Settings', href: 'settings' },
 		{ name: 'Square (display testing)', href: 'square' }
 	];
+
+	onMount(() => {
+		// @ts-ignore
+		let savedItems = JSON.parse(localStorage.getItem('storedPrograms') || '[]');
+		// @ts-ignore
+		apps = [...apps, ...savedItems.map((p) => ({ name: p.nameSave, href: p.href }))];
+		console.log(apps);
+	});
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +28,6 @@
 
 <div class="centerdiv">
 	<p class="apptitle">Programs</p>
-
 	<div class="list">
 		{#each apps as app}
 			<a href={app.href} class="selectA">{app.name}</a>
@@ -26,5 +35,5 @@
 		{/each}
 	</div>
 
-	<p>Version: {version}. <a href="logs">See update logs</a></p>
+	<p>Version: {version} <a href="logs">See update logs</a></p>
 </div>

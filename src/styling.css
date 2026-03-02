@@ -98,7 +98,7 @@ img {
 button {
 	font-family: 'SN Pro', sans-serif;
 	font-optical-sizing: auto;
-	margin-top: 10vh;
+	margin-top: 4vh;
 	flex-direction: column;
 	display: flex;
 	color: white;
@@ -120,6 +120,9 @@ button {
 	background-color: rgb(30, 30, 30);
 	border-radius: 30px;
 	margin: 5vh;
+}
+h3 {
+	font-size: 5vw;
 }
 p {
 	width: 70vw;
@@ -155,4 +158,17 @@ p {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+}
+
+input {
+	background-color: rgb(60, 60, 60);
+	outline: none;
+	border: none;
+	margin-bottom: 3vh;
+	border-radius: 4vw;
+	color: white;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+
+	text-align: center;
 }
