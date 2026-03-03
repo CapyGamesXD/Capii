@@ -6,7 +6,7 @@
 	let temp = Number();
 	let hum = Number();
 	async function getGeo() {
-		const url = 'http://ip-api.com/json/';
+		const url = 'https://ipapi.co/json/';
 		try {
 			const response = await fetch(url);
 			if (!response.ok) {
@@ -15,8 +15,8 @@
 
 			const result = await response.json();
 
-			lat = result.lat;
-			lon = result.lon;
+			lat = result.latitude;
+			lon = result.longitude;
 		} catch (error) {
 			// @ts-ignore
 			console.error(error.message);
