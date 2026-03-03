@@ -35,6 +35,7 @@ body {
 }
 h1 {
 	font-size: 10vw;
+	margin: 0;
 }
 
 h2 {
@@ -60,7 +61,8 @@ h2 {
 	display: flex;
 	color: white;
 	background-color: rgb(124, 169, 159);
-	width: 20vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
 	height: 6vw;
 	align-items: center;
 	justify-content: center;
@@ -161,6 +163,9 @@ p {
 }
 
 input {
+	font-family: 'SN Pro', sans-serif;
+	font-optical-sizing: auto;
+
 	background-color: rgb(60, 60, 60);
 	outline: none;
 	border: none;
@@ -173,4 +178,12 @@ input {
 	height: 7vh;
 	text-align: center;
 	font-size: 3vw;
+}
+
+iframe {
+	height: 90vh;
+}
+
+h4 {
+	font-size: 4vw;
 }

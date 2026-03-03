@@ -6,15 +6,15 @@
 		{ name: 'Time App', href: '/' },
 		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Stopwatch', href: 'stopwatch' },
-		{ name: 'Settings', href: 'settings' },
-		{ name: 'Square (display testing)', href: 'square' }
+		{ name: 'Weather', href: 'weather' },
+		{ name: 'Settings', href: 'settings' }
 	];
 
 	onMount(() => {
 		// @ts-ignore
 		let savedItems = JSON.parse(localStorage.getItem('storedPrograms') || '[]');
 		// @ts-ignore
-		apps = [...apps, ...savedItems.map((p) => ({ name: p.nameSave, href: p.href }))];
+		apps = [...apps, ...savedItems];
 		console.log(apps);
 	});
 </script>

@@ -1,4 +1,4 @@
 // @ts-ignore
-export let version = '1.2.5, "Matrix"';
+export let version = '1.3.0, "Meteo"';
 export let logs =
-	'Added developer features, visible in the developer panel within settings! Added some improvements to reloading on non-root pages. Various bug fixes and graphical improvements. This also marks the beginning of named Capii releases! ';
+	'Added weather app! Some bug fixes, reworked the mapping functions for the arrays to optimise them. Also altered the back buttons, allowing for more customisable sizes.';

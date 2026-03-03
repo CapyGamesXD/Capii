@@ -9,7 +9,7 @@
 	let storedPrograms = JSON.parse(localStorage.getItem('storedPrograms') || '[]');
 	function save() {
 		if (nameInput != '' && urlInput != '') {
-			storedPrograms = [...storedPrograms, { nameSave: nameInput, href: urlInput }];
+			storedPrograms = [...storedPrograms, { name: nameInput, href: urlInput }];
 			localStorage.setItem('storedPrograms', JSON.stringify(storedPrograms));
 		}
 		goto('/selector');
@@ -35,8 +35,11 @@
 	<button on:click={autoUpdate}>Auto-update</button>
 	<div class="divider"></div>
 	<h3>Developer Panel</h3>
-	<p>Add Program</p>
+
+	<a href="square" class="back">Display Warping Check</a>
 	<div class="divider"></div>
+	<h4>Add Program</h4>
+
 	<p>Name:</p>
 	<input bind:value={nameInput} />
 	<p>URL:</p>
