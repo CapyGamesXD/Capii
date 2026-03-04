@@ -7,6 +7,7 @@
 		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Stopwatch', href: 'stopwatch' },
 		{ name: 'Weather', href: 'weather' },
+		{ name: 'Dice', href: 'dice' },
 		{ name: 'Settings', href: 'settings' }
 	];
 
