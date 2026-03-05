@@ -38,7 +38,7 @@
 	<h1>{result}</h1>
 	<div class="divider"></div>
 	<h3>Range:</h3>
-	<div class="rowDiv">
+	<div class="row">
 		<button class="smallButton" on:click={bigaddNum}> +10 </button>
 		<button class="smallButton" on:click={addNum}> + </button>
 		<h1>{range}</h1>

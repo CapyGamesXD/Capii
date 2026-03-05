@@ -9,7 +9,7 @@
 	rel="stylesheet"
 />
 
-<div class="centerdiv">
+<div class="fullcenterdiv">
 	<a class="back" href="settings">Back</a>
 	<p>
 		Capii Version {version} <br /> Created by CapyDesigns <br />All version info available at the

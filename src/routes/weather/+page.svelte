@@ -5,6 +5,7 @@
 	let lon = Number();
 	let temp = Number();
 	let hum = Number();
+	let city = '';
 	async function getGeo() {
 		const url = 'https://ipapi.co/json/';
 		try {
@@ -17,6 +18,7 @@
 
 			lat = result.latitude;
 			lon = result.longitude;
+			city = result.city;
 		} catch (error) {
 			// @ts-ignore
 			console.error(error.message);
@@ -55,6 +57,7 @@
 
 <div class="centerdiv">
 	<a class="back" href="selector">Back</a>
+	<p>{city}</p>
 	<div class="divider"></div>
 
 	<h1>{temp.toPrecision(3)}ºc</h1>

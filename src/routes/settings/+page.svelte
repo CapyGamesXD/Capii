@@ -38,8 +38,8 @@
 
 	<a href="square" class="back">Display Warping Check</a>
 	<div class="divider"></div>
-	<h4>Add Program</h4>
-
+	<h4>Add Program:</h4>
+	<div class="divider"></div>
 	<p>Name:</p>
 	<input bind:value={nameInput} />
 	<p>URL:</p>

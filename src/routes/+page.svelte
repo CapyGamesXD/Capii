@@ -3,6 +3,9 @@
 
 	$: hours = date.getHours();
 	$: minutes = date.getMinutes();
+	$: day = date.getDay();
+	$: month = date.getMonth();
+	$: year = date.getFullYear();
 
 	setInterval(() => {
 		date = new Date();
@@ -19,5 +22,6 @@
 <a href="selector" class="nodecor">
 	<div class="fullcenterdiv">
 		<h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}</h1>
+		<h4>{day}/{month}/{year}</h4>
 	</div>
 </a>

@@ -1,3 +1,3 @@
 // @ts-ignore
-export let version = '1.3.2, "Hawk"';
-export let logs = 'Added "dice" page, a few bug fixes and other changes';
+export let version = '1.3.4, "Hawk"';
+export let logs = 'Various UI improvements across the program';
