@@ -46,6 +46,15 @@
 
 		temp = data.main.temp - 273.15;
 		hum = data.main.humidity;
+		cond = data.weather[0].description;
+
+		cond = cond
+			.toLowerCase()
+			.split(' ')
+			.map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+			.join(' ');
+
+		console.log(cond);
 	}
 
 	onMount(async () => {
@@ -72,6 +81,7 @@
 	<p>{city}</p>
 	<h1>{temp.toPrecision(3)}ºc</h1>
 	<h1>{hum.toPrecision(3)}%</h1>
+	<p class="cond">{cond}</p>
 
 	<div class="divider"></div>
 
