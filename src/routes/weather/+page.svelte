@@ -1,32 +1,41 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let lat = Number();
-	let lon = Number();
+	let lat = localStorage.getItem('lat') || 0;
+	let lon = localStorage.getItem('lon') || 0;
 	let temp = Number();
 	let hum = Number();
+	let cond = '';
 	let city = '';
 	async function getGeo() {
-		const url = 'https://ipapi.co/json/';
-		try {
-			const response = await fetch(url);
-			if (!response.ok) {
-				throw new Error(`Response status: ${response.status}`);
+		if (lat == 0 || lon == 0) {
+			const url = 'https://ipapi.co/json/';
+			try {
+				const response = await fetch(url);
+				if (!response.ok) {
+					throw new Error(`Response status: ${response.status}`);
+				}
+
+				const result = await response.json();
+
+				lat = result.latitude;
+
+				lon = result.longitude;
+
+				localStorage.setItem('lat', lat.toString());
+				localStorage.setItem('lon', lon.toString());
+
+				console.log(localStorage.getItem('lat'));
+				cond = result.weather.main;
+				city = result.city;
+			} catch (error) {
+				// @ts-ignore
+				console.error(error.message);
 			}
-
-			const result = await response.json();
-
-			lat = result.latitude;
-			lon = result.longitude;
-			city = result.city;
-		} catch (error) {
-			// @ts-ignore
-			console.error(error.message);
 		}
-		fetchWeater();
 	}
 
-	async function fetchWeater() {
+	async function fetchWeather() {
 		const send = await fetch('/api', {
 			method: 'POST',
 			body: JSON.stringify({ lat, lon }),
@@ -40,10 +49,11 @@
 		hum = data.main.humidity;
 	}
 
-	onMount(() => {
-		getGeo();
+	onMount(async () => {
+		await getGeo();
+		fetchWeather();
 		setInterval(() => {
-			fetchWeater();
+			fetchWeather();
 		}, 300000);
 	});
 </script>
@@ -60,6 +70,7 @@
 	<p>{city}</p>
 	<div class="divider"></div>
 
+	<p></p>
 	<h1>{temp.toPrecision(3)}ºc</h1>
 	<h1>{hum.toPrecision(3)}%</h1>
 

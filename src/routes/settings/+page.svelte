@@ -19,6 +19,12 @@
 		localStorage.clear();
 		goto('/selector');
 	}
+
+	function clearIP() {
+		localStorage.removeItem('lat');
+		localStorage.removeItem('lon');
+		goto('/selector');
+	}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,5 +52,6 @@
 	<input bind:value={urlInput} />
 	<button on:click={save}>Add</button>
 	<div class="divider"></div>
+	<button on:click={clearIP}>Re-call IP</button>
 	<button on:click={remove}>Clear Apps</button>
 </div>

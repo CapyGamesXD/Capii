@@ -3,8 +3,8 @@
 
 	$: hours = date.getHours();
 	$: minutes = date.getMinutes();
-	$: day = date.getDay();
-	$: month = date.getMonth();
+	$: day = date.getDate();
+	$: month = date.getMonth() + 1;
 	$: year = date.getFullYear();
 
 	setInterval(() => {

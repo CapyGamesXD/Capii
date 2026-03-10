@@ -37,12 +37,14 @@ h1 {
 	font-size: 10vw;
 	margin: 0;
 	line-height: 1;
+	margin-top: 3vh;
 }
 
 h2 {
 	font-size: 7vw;
 	margin-top: 10vh;
 	margin: 0;
+	margin-top: 3vh;
 }
 
 .bottomtext {
@@ -74,7 +76,6 @@ h2 {
 	outline: none;
 	margin-top: 3vh;
 	border: none;
-	margin-bottom: 4vh;
 }
 
 .nodecor {
@@ -133,6 +134,7 @@ p {
 	width: 70vw;
 	font-size: 3vw;
 	margin: 0;
+	margin-top: 3vh;
 }
 
 .square {
@@ -145,6 +147,7 @@ p {
 	padding: 3vw;
 	flex-direction: column;
 	min-height: 20vw;
+	margin-top: 2vh;
 }
 
 .smallSquare {
@@ -189,6 +192,7 @@ input {
 	height: 7vh;
 	text-align: center;
 	font-size: 3vw;
+	margin-top: 3vh;
 }
 
 iframe {
