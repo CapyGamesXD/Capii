@@ -23,6 +23,8 @@
 	function clearIP() {
 		localStorage.removeItem('lat');
 		localStorage.removeItem('lon');
+		localStorage.removeItem('city');
+
 		goto('/selector');
 	}
 </script>

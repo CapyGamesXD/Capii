@@ -6,7 +6,7 @@
 	let temp = Number();
 	let hum = Number();
 	let cond = '';
-	let city = '';
+	let city = localStorage.getItem('city') || 'Fetching Location...';
 	async function getGeo() {
 		if (lat == 0 || lon == 0) {
 			const url = 'https://ipapi.co/json/';
@@ -19,15 +19,14 @@
 				const result = await response.json();
 
 				lat = result.latitude;
-
+				city = result.city;
 				lon = result.longitude;
 
+				console.log(city);
 				localStorage.setItem('lat', lat.toString());
 				localStorage.setItem('lon', lon.toString());
-
+				localStorage.setItem('city', city.toString());
 				console.log(localStorage.getItem('lat'));
-				cond = result.weather.main;
-				city = result.city;
 			} catch (error) {
 				// @ts-ignore
 				console.error(error.message);
@@ -67,10 +66,10 @@
 
 <div class="centerdiv">
 	<a class="back" href="selector">Back</a>
-	<p>{city}</p>
+
 	<div class="divider"></div>
 
-	<p></p>
+	<p>{city}</p>
 	<h1>{temp.toPrecision(3)}ºc</h1>
 	<h1>{hum.toPrecision(3)}%</h1>
 
