@@ -4,16 +4,16 @@
 
 	let apps = [
 		{ name: 'Dashboard', href: '/' },
-		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Stopwatch', href: 'stopwatch' },
 		{ name: 'Weather', href: 'weather' },
 		{ name: 'Dice', href: 'dice' },
+		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Settings', href: 'settings' }
 	];
 
 	onMount(() => {
 		// @ts-ignore
-		let savedItems = JSON.parse(localStorage.getItem('storedPrograms') || '[]');
+		let savedItems = JSON.parse(localStorage.getItem('storedPrograms') || []);
 		// @ts-ignore
 		apps = [...apps, ...savedItems];
 		console.log(apps);
