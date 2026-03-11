@@ -41,6 +41,7 @@
 	<h3>Settings:</h3>
 	<a href="about" class="back">About</a>
 	<button on:click={autoUpdate}>Auto-update</button>
+	<p>Automatically downloads updates if available</p>
 	<div class="divider"></div>
 	<h3>Developer Panel</h3>
 
