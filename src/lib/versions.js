@@ -1,4 +1,3 @@
 // @ts-ignore
-export let version = '1.3.5, "Hawk"';
-export let logs =
-	'Optimised the IP system, also fixing a bug in the weather app where the weather would incorrectly load without the location. UI improvements.';
+export let version = '1.3.6, "Hawk"';
+export let logs = 'Added temperature to home screen, renamed to Dashboard.';

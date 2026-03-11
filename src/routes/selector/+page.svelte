@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 
 	let apps = [
-		{ name: 'Time App', href: '/' },
+		{ name: 'Dashboard', href: '/' },
 		{ name: 'Capy App!', href: 'capy' },
 		{ name: 'Stopwatch', href: 'stopwatch' },
 		{ name: 'Weather', href: 'weather' },

@@ -5,34 +5,8 @@
 	let lon = localStorage.getItem('lon') || 0;
 	let temp = Number();
 	let hum = Number();
-	let cond = '';
+	let cond = 'Fetching Conditions...';
 	let city = localStorage.getItem('city') || 'Fetching Location...';
-	async function getGeo() {
-		if (lat == 0 || lon == 0) {
-			const url = 'https://ipapi.co/json/';
-			try {
-				const response = await fetch(url);
-				if (!response.ok) {
-					throw new Error(`Response status: ${response.status}`);
-				}
-
-				const result = await response.json();
-
-				lat = result.latitude;
-				city = result.city;
-				lon = result.longitude;
-
-				console.log(city);
-				localStorage.setItem('lat', lat.toString());
-				localStorage.setItem('lon', lon.toString());
-				localStorage.setItem('city', city.toString());
-				console.log(localStorage.getItem('lat'));
-			} catch (error) {
-				// @ts-ignore
-				console.error(error.message);
-			}
-		}
-	}
 
 	async function fetchWeather() {
 		const send = await fetch('/api', {
@@ -58,7 +32,6 @@
 	}
 
 	onMount(async () => {
-		await getGeo();
 		fetchWeather();
 		setInterval(() => {
 			fetchWeather();
