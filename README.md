@@ -22,6 +22,10 @@ sudo systemctl start capii
 
 This removes the cache.
 
+
+<img width="1453" height="793" alt="Screenshot 2026-04-03 at 11 21 16" src="https://github.com/user-attachments/assets/30cce845-b21d-49d5-b6a3-a747b8a10f2d" />
+
+
 ## Developer info:
 
 I provided a way to add your own programs! :D If you would like to make them consistent with the style of the rest of Capii, please use this info below!
